@@ -10,11 +10,15 @@ YOU are the rude one), anger that feels shared rather than performed.
 
 import os
 
+MAX_ENTRY_CHARS = 400
+
 ENTRY = (
     "My family group chat has 214 unread messages and every single one "
     "is a 'good morning' flower. I mute it for one day and suddenly I'm "
     "the rude one who missed grandma's birthday."
 )
+
+assert 1 <= len(ENTRY) <= MAX_ENTRY_CHARS, "entry out of gate range"
 
 
 def main() -> None:
